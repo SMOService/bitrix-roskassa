@@ -1,0 +1,34 @@
+name: Ошибка
+description: Модуль работает не так, как описано
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Уязвимости — не сюда, а через Security → Report a vulnerability."
+  - type: textarea
+    id: what
+    attributes:
+      label: Что произошло
+      description: Что ожидали и что получили. Без ключей и личных данных покупателей.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как воспроизвести
+      placeholder: "1. ...\n2. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Записи журнала
+      description: Строки с префиксом `Roskassa:` из журнала ошибок платёжных систем (b_sale_pay_system_err_log).
+      render: text
+  - type: input
+    id: versions
+    attributes:
+      label: Версии
+      placeholder: "модуль 1.0.0, Bitrix sale 23.500, PHP 8.1"
+    validations:
+      required: true

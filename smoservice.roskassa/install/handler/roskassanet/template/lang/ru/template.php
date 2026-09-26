@@ -1,0 +1,5 @@
+<?php
+
+$MESS['SMOSERVICE_ROSKASSA_TPL_INVOICE'] = 'Счёт № #NUMBER#';
+$MESS['SMOSERVICE_ROSKASSA_TPL_SUM'] = 'Сумма к оплате:';
+$MESS['SMOSERVICE_ROSKASSA_TPL_PAY'] = 'Оплатить';
